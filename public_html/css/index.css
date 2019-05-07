@@ -1,70 +1,81 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: "Avenir Next";
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
 a {
   text-decoration: none;
-  }
+}
 .container{
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
+
 /*header*/
 header{
   height: 65px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-color: rgba(23, 51, 56, 0.9);
   position: fixed;
   top: 0;
-}
-.logo{
-  width:30px;
-  margin-top: 20px;
+  z-index: 10;
 }
 .header-left{
-  float: left;
+  float:left;
+}
+.header-left a{
+  color: white;
+  line-height: 65px;
+  padding: 0 25px;
 }
 .header-right{
   float:right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
+  margin-right: -25px;
 }
 .header-right a{
-  color: #fff;
   line-height: 65px;
-  padding: 0px 25px;
+  padding: 0 25px;
+  color: white;
   display: block;
+  float: left;
+  transition: all 0.5s;
 }
-.header-right:hover{
-  background-color: rgba(255, 255, 255, 0.5);
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
-/*top-wrapper*/
+
+/*top*/
 .top-wrapper{
-  background-image: url(/image/header-back.jpg);
-  color: #fff;
-  padding: 180px 0px 100px 0px;
+  padding: 265px 0 200px 0;
+  background-image: url(/image/top-back.jpg);
   background-size: cover;
   text-align: center;
 }
 .top-wrapper h1{
-  opacity: 0.7;
+  color: rgba(207, 204, 34, 0.9);
+  background-color: rgba(212, 28, 28, 0.5);
+  border-radius: 10px;
   font-size: 45px;
   letter-spacing: 5px;
 }
-.top-wrapper p{
-  opacity: 0.7;
-}
 .btn{
-  padding: 8px 24px 8px 24px;
-  color: #fff;
+  background-color: #5dca88;
+  padding: 15px 40px;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+  color: white;
   display: inline-block;
-  opacity: 0.8;
-  background-color: #239b76;
-  margin: 20px 0px 20px 0px;
   border-radius: 4px;
+  text-align: center;
 }
-.btn:hover{
-  opacity: 1;
+.btn:active{
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 .fa{
   margin-right: 5px;
@@ -72,19 +83,6 @@ header{
 
 /*footer*/
 footer{
-  background-color: #2f5167;
-  color: #fff;
-  height: 120px;
-  padding: 40px;
-}
-.footer-logo{
-  font-size: 32px;
-  float: left;
-}
-.footer-list{
-  float: right;
-}
-.footer-list li{
-  list-style: none;
-  padding-bottom: 20px;
+  padding: 30px 0 20px 0;
+  background-color: rgba(168, 168, 168, 0.3);
 }
